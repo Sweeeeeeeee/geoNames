@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Geography </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2> The Guesser </h2>
+
+		<p id = "totalCounter" style = "color: #666;"> </p>
+
+        <button onclick = "guess()"> Guess! </button>
+        <div id = "result"> ----- </div>
+
+		<button onclick = "searchMap()"> Show on Map </button>
+
+		<button onclick = "window.location.href = 'index.html'"> Go Back </button>
+    </div>
+
+	<div id="mapContainer">
+        <iframe id="mapFrame" style="display:none;" allowfullscreen></iframe> 
+    </div>
+
+	<script src = "game.js"> </script>
+</body>
+</html>
