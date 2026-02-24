@@ -16,7 +16,7 @@ function load() {
 	fetch('data.json').then(response => response.json()).then(data => {
 			jsonData = data
 
-            const container = document.getElementById('options-container')
+            const container = document.getElementById('optionsContainer')
 			let total = 0
 
             Object.keys(data).forEach(key => {
