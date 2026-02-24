@@ -9,9 +9,17 @@
     <div class="container">
         <h2> The Guesser </h2>
 
-		<p id = "totalCounter" style = "color: #666;"> </p>
+		<div id = "stats">
+			<p id = "totalCounter" style = "color: #666;"> </p>
+			<p id = "scoreCounter"> Score: 0 / 0 </p>
+		</div>
 
-        <button onclick = "guess()"> Guess! </button>
+		<div id = "timer"> Time: 0 </div>
+
+		<div id = "controls">
+        	<button id = "startBtn" onclick = "startGame()"> Guess! </button>
+		</div>
+
         <div id = "result"> ----- </div>
 
 		<button onclick = "show()"> Show </button>

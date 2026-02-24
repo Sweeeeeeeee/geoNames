@@ -1,4 +1,8 @@
 let fullPool = []
+let correctCount = 0
+let totalCount = 0
+let seconds = 0
+let timeInterval
 
 function load() {
     fetch("data.json").then(response => response.json()).then(data => {
@@ -13,9 +17,41 @@ function load() {
 	)
 }
 
-function guess() {
+function startGame() {
+    const controls = document.getElementById('controls')
+    controls.innerHTML = `
+        <div class = "guessActions">
+            <button class = "btnCorrect" onclick = "recordGuess(true)"> Correct </button>
+            <button class = "btnWrong" onclick = "recordGuess(false)"> Wrong </button>
+        </div>
+    `
+    nextRound()
+}
+
+function nextRound() {
+	clearInterval(timeInterval)
+	seconds = 0
+	document.getElementById("timer").innerText = `Time: ${seconds}`;
+	
+	timeInterval = setInterval(() => {
+			seconds++
+			document.getElementById("timer").innerText = `Time: ${seconds}`
+		}
+	, 1000)
+
     const randomItem = fullPool[Math.floor(Math.random() * fullPool.length)]
     document.getElementById('result').innerText = randomItem
+}
+
+function recordGuess(isCorrect) {
+	totalCount++
+	if (isCorrect) {
+		correctCount++
+	}
+
+	document.getElementById("scoreCounter").innerText = `Correct: ${correctCount} / ${totalCount}`
+
+	nextRound()
 }
 
 function show() {

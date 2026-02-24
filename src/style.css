@@ -83,6 +83,47 @@ body:has(#toolContainer) {
     padding: 0 5%;
 }
 
+#stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+#timer {
+    font-weight: 600;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+}
+
+.guessActions {
+    display: flex;
+    gap: 10px;
+}
+
+.btnCorrect {
+    background-color: #28a745;
+}
+
+.btnCorrect:hover {
+    background-color: #218838;
+    border-color: #28a745;
+}
+
+.btnWrong {
+    background-color: #dc3545;
+}
+
+.btnWrong:hover {
+    background-color: #c82333;
+    border-color: #dc3545;
+}
+
+#scoreCounter {
+    color: #00adb5;
+}
+
 #result {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem; 
@@ -159,5 +200,45 @@ body:has(#toolContainer) {
     #toolContainer {
         width: 90%;
         height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; 
+        justify-content: flex-start;
+        padding: 20px 10px;
+        overflow-y: auto;
+    }
+
+    body:has(#toolContainer) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 350px;
+        padding: 1.5rem;
+    }
+
+    #wrapper {
+        width: 95%;
+        order: 2;
+    }
+
+    #toolContainer {
+        height: 50vh; 
+        min-height: 300px;
+    }
+
+    #result {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1rem;
     }
 }
