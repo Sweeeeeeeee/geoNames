@@ -20,7 +20,7 @@ func main() {
 		},
 	)
 
-	srv := &http.Server{Addr: ":8080", Handler: handler}
+	srv := &http.Server{Addr: ":80", Handler: handler}
 
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
