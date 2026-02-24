@@ -171,7 +171,9 @@
 	"Karpati (Gerlaha smaile)", 
 	"Rodopi", 
 	"Dināru kalni", 
-	"Alpi (Monblāns, Matehorns)",
+	"Alpi",
+	"Monblāns",
+	"Matehorns",
     "Apenīni (Korno)", 
 	"Pireneji (Aneto)", 
 	"Skandināvijas kalni (Galhēpigens)", 
@@ -254,7 +256,7 @@
 	"Temza", 
 	"Nemuna",
     "Ziemeļdvina", 
-	"Urāla"
+	"Urāla upe"
   ],
   "# Eirāzija # Ezeri": [
 	"Baikāls", 

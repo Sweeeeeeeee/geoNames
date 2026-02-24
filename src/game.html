@@ -14,14 +14,22 @@
         <button onclick = "guess()"> Guess! </button>
         <div id = "result"> ----- </div>
 
-		<button onclick = "searchMap()"> Show on Map </button>
+		<button onclick = "show()"> Show </button>
 
 		<button onclick = "window.location.href = 'index.html'"> Go Back </button>
     </div>
 
-	<div id="mapContainer">
-        <iframe id="mapFrame" style="display:none;" allowfullscreen></iframe> 
-    </div>
+	<div id = "wrapper">
+		<div class = "tabs">
+			<button class = "tabBtn active" onclick = "switchView('map')"> Google Maps </button>
+			<button class = "tabBtn" onclick = "switchView('wiki')"> Wikipedia </button>
+		</div>
+
+		<div id="toolContainer">
+        	<iframe id = "mapFrame" style="display:none;" allowfullscreen> </iframe> 
+			<iframe id = "wikiFrame" style="display:none;" src = "about:blank"> </iframe>
+    	</div>
+	</div>
 
 	<script src = "game.js"> </script>
 </body>
