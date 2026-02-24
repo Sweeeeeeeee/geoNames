@@ -19,7 +19,7 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
     border: 1px solid #333;
     text-align: center;
-    width: 320px; /* Compact menu size */
+    width: 320px;
     transition: all 0.3s ease;
 }
 
