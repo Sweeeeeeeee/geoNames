@@ -33,6 +33,29 @@ function load() {
 			document.getElementById('totalCounter').innerText = "Selected: 0"
         }
 	)
+
+	const slider = document.getElementById("popSlider")
+    updateSliderDisplay(slider.value)
+}
+
+function updateSliderDisplay(val) {
+    document.getElementById('popDisplay').innerText = Number(val).toLocaleString();
+}
+
+async function startLatviaGame() {
+    const minPopulation = Number(document.getElementById('popSlider').value)
+
+    const response = await fetch('data2.json')
+    const data = await response.json()
+
+    const filteredCities = Object.keys(data).filter(key => {
+        	return Number(data[key]) > minPopulation;
+    	}
+	)
+
+    localStorage.setItem('selectedCategories', JSON.stringify(filteredCities))
+
+    window.location.href = "game2.html"
 }
 
 function selectAll() {
@@ -44,6 +67,7 @@ function selectAll() {
 
 	update()
 }
+
 function unselectAll() {
 	const checkBoxes = document.querySelectorAll('.cat-check')
 	checkBoxes.forEach(cb => {
