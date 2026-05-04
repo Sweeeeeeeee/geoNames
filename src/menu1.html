@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Geography </title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <div class = "container">	
+        <h2> Select Regions </h2>
+
+        <label for = "popSlider"> Min. Population: <span id = "popDisplay"> 0 </span> </label> <br>
+        <input type = "range" id = "popSlider" min = "0" max = "100000" value = "0" step = "200" oninput = "updateSliderDisplay(this.value)">
+
+		<button onclick = "selectAll()"> Select All </button>
+		<button onclick = "unselectAll()"> Unselect All </button>
+
+		<p id = "totalCounter"> </p>
+		<div id = "optionsContainer"> </div>
+
+        <button onclick = "startGame()"> Go to Game </button>
+
+		<button onclick = "goBack()"> Go Back </button>
+    </div>
+
+    <script src = "menu1.js"> </script>
+</body>
+</html>

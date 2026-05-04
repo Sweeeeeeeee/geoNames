@@ -1,0 +1,157 @@
+﻿{
+	"Dienvidkurzemes novads": {
+		"Liepāja": 67421,
+		"Aizpute": 3820,
+		"Grobiņa": 3674,
+		"Priekule": 1843,
+		"Pāvilosta": 858,
+		"Durbe": 480
+	},
+	"Ventspils novads": {
+		"Ventspils": 32723,
+		"Piltene": 823
+	},
+	"Talsu novads": {
+		"Talsi": 8673,
+		"Stende": 1501,
+		"Sabile": 1353,
+		"Valdemārpils": 1147
+	},
+	"Kuldīgas novads": {
+		"Kuldīga": 9863,
+		"Skrunda": 1736
+	},
+	"Saldus novads": {
+		"Saldus": 9686,
+		"Brocēni": 2922
+	},
+	"Tukuma novads": {
+		"Tukums": 16182,
+		"Kandava": 3232
+	},
+	"Dobeles novads": {
+		"Dobele": 8536,
+		"Auce": 2154
+	},
+	"Jelgavas novads": {
+		"Jelgava": 54834
+	},
+	"Mārupes novads": {
+		"Mārupe": 16801
+	},
+	"Rīga": {
+		"Rīga": 595053,
+		"Jūrmala": 52001
+	},
+	"Olaines novads": {
+		"Olaine": 9654
+	},
+	"Ķekavas novads": {
+		"Baloži": 6739,
+		"Ķekava": 4943,
+		"Baldone": 3684
+	},
+	"Salaspils novads": {
+		"Salaspils": 17865
+	},
+	"Bauskas novads": {
+		"Bauska": 9709,
+		"Iecava": 5303
+	},
+	"Ogres novads": {
+		"Ogre": 22757,
+		"Ikšķile": 7448,
+		"Lielvārde": 5873,
+		"Ķegums": 2065
+	},
+	"Ropažu novads": {
+		"Vangaži": 3168
+	},
+	"Ādažu novads": {
+		"Ādaži": 7580
+	},
+	"Saulkrastu novads": {
+		"Saulkrasti": 3124
+	},
+	"Siguldas novads": {
+		"Sigulda": 14757
+	},
+	"Limbažu novads": {
+		"Limbaži": 6517,
+		"Salacgrīva": 2468,
+		"Aloja": 1046,
+		"Staicele": 745,
+		"Ainaži": 650
+	},
+	"Valmieras novads": {
+		"Valmiera": 22812,
+		"Rūjiena": 2633,
+		"Seda": 1101,
+		"Mazsalaca": 1092,
+		"Strenči": 973
+	},
+	"Valkas novads": {
+		"Valka": 4615
+	},
+	"Smiltenes novads": {
+		"Smiltene": 5073,
+		"Ape": 773
+	},
+	"Cēsu novads": {
+		"Cēsis": 15020,
+		"Līgatne": 1017
+	},
+	"Madonas novads": {
+		"Madona": 6575,
+		"Lubāna": 1418,
+		"Cesvaine": 1197
+	},
+	"Varakļānu novads": {
+		"Varakļāni": 1619
+	},
+	"Aizkraukles novads": {
+		"Aizkraukle": 6689,
+		"Pļaviņas": 2864,
+		"Koknese": 2377,
+		"Jaunjelgava": 1681
+	},
+	"Jēkabpils novads": {
+		"Jekabpils": 21014,
+		"Viesīte": 1473,
+		"Aknīste": 931
+	},
+	"Līvānu novads": {
+		"Līvāni": 6758
+	},
+	"Augšdaugavas novads": {
+		"Daugavpils": 78126,
+		"Ilūkste": 2036,
+		"Subate": 523
+	},
+	"Preiļu novads": {
+		"Preiļi": 5767
+	},
+	"Krāslavas novads": {
+		"Krāslava": 6797,
+		"Dagda": 1773
+	},
+	"Ludzas novads": {
+		"Ludza": 7332,
+		"Kārsava": 1837,
+		"Zilupe": 1232
+	},
+	"Rēzeknes novads": {
+		"Rēzekne": 26429,
+		"Viļāni": 2696
+	},
+	"Balvu novads": {
+		"Balvi": 5547,
+		"Viļaka": 1139
+	},
+	"Gulbenes novads": {
+		"Gulbene": 6722
+	},
+	"Alūksnes novads": {
+		"Alūksne": 6188
+	}
+}

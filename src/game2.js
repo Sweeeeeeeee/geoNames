@@ -7,8 +7,10 @@ let timeInterval
 function load() {
     fetch("data2.json").then(response => response.json()).then(data => {
             const selected = JSON.parse(localStorage.getItem("selectedCategories"))
-
-			fullPool = selected
+            selected.forEach(cat => {
+                	fullPool = fullPool.concat(data[cat])
+            	}
+			)
 			
 			document.getElementById('totalCounter').innerText = "Selected: " + fullPool.length
 		}
@@ -58,8 +60,8 @@ function show() {
         const mapFrame = document.getElementById('mapFrame')
         const wikiFrame = document.getElementById('wikiFrame')
 
-		const zoomLevel = 8
-		const mapUrl = `https://www.google.lv/maps?q=${encodeURIComponent(location)}&hl=lv&gl=lv&z=${zoomLevel}&output=embed`;
+		const zoomLevel = 6
+		const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(location)}&hl=lv&z=${zoomLevel}&ie=UTF8&iwloc=&output=embed`
 		mapFrame.src = mapUrl
 
 		const wikiUrl = `https://lv.m.wikipedia.org/w/index.php?search=${encodeURIComponent(location)}&title=Special:Search&go=Go`;
@@ -88,6 +90,10 @@ function switchView(type) {
         btns[0].classList.remove('active')
         btns[1].classList.add('active')
     }
+}
+
+function goBack() {
+	window.location.href = "menu2.html"
 }
 
 load()
